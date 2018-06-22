@@ -1,5 +1,13 @@
 <template>
   <div id="app">
+    <router-link to="/LawsRegulations">党纪法规模块</router-link>
+    <router-link to="/ArticleUnscramble">条文解读模块</router-link>
+    <router-link to="/StudyAnswer">学习问答模块</router-link>
+    <router-link to="/WarningExposure">警示曝光模块</router-link>
+    <router-link to="/VideoEducation">视频教育模块</router-link>
+    <router-link to="/CleanCulture">廉洁文化模块</router-link>
+    <router-link to="/ReportOffense">我要举报模块</router-link>
+    <router-link to="/ReportInquiries">举报查询模块</router-link>
     <router-view></router-view>
   </div>
 </template>

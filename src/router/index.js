@@ -47,5 +47,25 @@ export default new Router({
             name: 'WarningExposure',
             component: resolve =>require(['@/components/WarningExposure'],resolve)
         },
+        {
+            path: '/ArticleUnscrambleDetail',
+            name: 'ArticleUnscrambleDetail',
+            component: resolve =>require(['@/components/ArticleUnscramble/detail'],resolve)
+        },
+        {
+            path: '/WarningExposureDetail',
+            name: 'WarningExposureDetail',
+            component: resolve =>require(['@/components/WarningExposure/detail'],resolve)
+        },
+        {
+            path: '/VideoEducationDetail',
+            name: 'VideoEducationDetail',
+            component: resolve =>require(['@/components/VideoEducation/detail'],resolve)
+        },
+        {
+            path: '/CleanCultureDetail',
+            name: 'CleanCultureDetail',
+            component: resolve =>require(['@/components/CleanCulture/detail'],resolve)
+        },
     ]
 })

@@ -1,43 +1,45 @@
 <template>
-    <div class="contain">
+    <div class="contain-4">
         <div class="head-img">
-            <a href=""><img src="../assets/ArticleUnscramble/head.png" alt=""></a>
+            <a href=""><img src="../assets/WarningExposure/head.png" alt=""></a>
         </div>
         <div class="article">
-            <h2 class="lib-title"><img src="../assets/ArticleUnscramble/edit.png" alt=""> 条文解读</h2>
+            <h2 class="lib-title">廉洁文化</h2>
             <div class="lib-context">
                 <ul>
+                    <router-link to="/CleanCultureDetail">
+                        <li>
+                            <img class="left-img" src="../assets/ArticleUnscramble/1.png" alt="">
+                            <h3 class="context-title">(四十一)监察机关采取调查措施的程序性规定</h3>
+                            <p class="time-text"><img class="time" src="../assets/ArticleUnscramble/time.png" alt="">2018-06-11</p>
+                        </li>
+                    </router-link>
                     <li>
                         <img class="left-img" src="../assets/ArticleUnscramble/1.png" alt="">
                         <h3 class="context-title">(四十一)监察机关采取调查措施的程序性规定</h3>
                         <p class="time-text"><img class="time" src="../assets/ArticleUnscramble/time.png" alt="">2018-06-11</p>
                     </li>
-                                        <li>
+                    <li>
                         <img class="left-img" src="../assets/ArticleUnscramble/1.png" alt="">
                         <h3 class="context-title">(四十一)监察机关采取调查措施的程序性规定</h3>
                         <p class="time-text"><img class="time" src="../assets/ArticleUnscramble/time.png" alt="">2018-06-11</p>
                     </li>
-                                        <li>
+                    <li>
                         <img class="left-img" src="../assets/ArticleUnscramble/1.png" alt="">
                         <h3 class="context-title">(四十一)监察机关采取调查措施的程序性规定</h3>
                         <p class="time-text"><img class="time" src="../assets/ArticleUnscramble/time.png" alt="">2018-06-11</p>
                     </li>
-                                        <li>
+                    <li>
                         <img class="left-img" src="../assets/ArticleUnscramble/1.png" alt="">
                         <h3 class="context-title">(四十一)监察机关采取调查措施的程序性规定</h3>
                         <p class="time-text"><img class="time" src="../assets/ArticleUnscramble/time.png" alt="">2018-06-11</p>
                     </li>
-                                        <li>
+                    <li>
                         <img class="left-img" src="../assets/ArticleUnscramble/1.png" alt="">
                         <h3 class="context-title">(四十一)监察机关采取调查措施的程序性规定</h3>
                         <p class="time-text"><img class="time" src="../assets/ArticleUnscramble/time.png" alt="">2018-06-11</p>
                     </li>
-                                        <li>
-                        <img class="left-img" src="../assets/ArticleUnscramble/1.png" alt="">
-                        <h3 class="context-title">(四十一)监察机关采取调查措施的程序性规定</h3>
-                        <p class="time-text"><img class="time" src="../assets/ArticleUnscramble/time.png" alt="">2018-06-11</p>
-                    </li>
-                                        <li>
+                    <li>
                         <img class="left-img" src="../assets/ArticleUnscramble/1.png" alt="">
                         <h3 class="context-title">(四十一)监察机关采取调查措施的程序性规定</h3>
                         <p class="time-text"><img class="time" src="../assets/ArticleUnscramble/time.png" alt="">2018-06-11</p>
@@ -52,7 +54,7 @@
 </template>
 <style scoped lang="less">
 @import '../css/index.less';
-.contain{
+.contain-4{
     min-width: 100%;
     .head-img{
         min-width: 100%;
@@ -64,43 +66,31 @@
         min-width: 100%;
         height: 56px;
         position: relative;
+        margin-top: 20px;
         .lib-title{
-        font-size:15px;
+        font-size: @md-size;
+        font-weight: bold;
         color: @main-color;
         padding: 6px 10px 20px 10px;
         text-align: left;
-        font-weight: 500;
-        img{
-            position: relative;
-            left: 4px;
-            top: 4px;
-        }
-        }
-        .lib-title:before {
-            position: relative;
-            top: 23px;
-            content: " ";
-            display: block;
-            width: 1px;
-            height: 10px;
-            background-color: @main-color;
-        }
-        .lib-title:after {
-            content: " ";
-            display: block;
-            width: 100%;
-            height: 1px;
-            background-color: @main-color;
+            img{
+                position: relative;
+                left: 4px;
+                top: 4px;
+            }
         }
         .lib-context{
             margin: 10px;
             ul{
+                a{
+                    color: @title-color;
+                }
                 li{ 
                     position: relative;
                     min-width: 100%;
                     min-height: 50px;
                     margin-bottom: 10px;
-                    border-bottom: 1px solid #f2f3f5;
+                    border-bottom: 1px solid @border-color;
                     .left-img{
                         width: 120px;
                         height: 92px;
@@ -119,7 +109,7 @@
                         bottom: 10px;
                         right: 0px;
                         overflow: hidden;
-                        color: #999;
+                        color: @text-color;
                         .time{
                         width: 16px;
                         height: 18px;
@@ -135,7 +125,7 @@
             text-align: center;
             height: 56px;
             margin: 0 auto;
-            color: #afafaf;
+            color: @download-color;
             img{
                 position: relative;
                 top: 2px;
@@ -143,7 +133,4 @@
         }
     }
 }
-
-
-
 </style>
